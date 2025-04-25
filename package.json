@@ -1,18 +1,33 @@
 {
   "name": "freeaichatplayground-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
     "lint": "eslint . --ext .ts",
     "example": "ts-node src/example.ts"
   },
-  "keywords": ["ai","chat","typescript","sdk", "free ai", "freeaichat", "free ai chat", "free ai playground", "free ai playground client", "free ai playground sdk", "free ai playground typescript", "free ai playground typescript sdk", "unlimited ai"],
+  "keywords": [
+    "ai",
+    "chat",
+    "typescript",
+    "sdk",
+    "free ai",
+    "freeaichat",
+    "free ai chat",
+    "free ai playground",
+    "free ai playground client",
+    "free ai playground sdk",
+    "free ai playground typescript",
+    "free ai playground typescript sdk",
+    "unlimited ai"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bypepe77/Freeaichatplayground-client.git"
