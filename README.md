@@ -7,7 +7,7 @@ FreeAIChat Playground API is a lightweight TypeScript client for interacting wit
 ## 🚀 Installation
 
 ```bash
-npm install freeaichat-client
+npm install freeaichatplayground-client
 ```
 
 ---
