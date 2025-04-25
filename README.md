@@ -1,4 +1,3 @@
-```markdown
 # FreeAIChat Playground API
 
 FreeAIChat Playground API is a lightweight TypeScript client for interacting with [https://freeaichatplayground.com](https://freeaichatplayground.com). You get access to over 20 AI models with 1000 free credits per day.
