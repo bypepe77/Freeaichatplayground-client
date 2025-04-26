@@ -23,18 +23,18 @@ npm install freeaichatplayground-client
 ## 📦 Usage Example
 
 ```ts
-// src/example.ts
-import { ApiRequest, FreeAiChatClient, FreeAiChatClientOptions, createTextMessage } from "./index";
+import { ApiRequest, createTextMessage, FreeAiChatClient, FreeAiChatClientOptions, Message } from "freeaichatplayground-client";
+
 
 async function main() {
-    const clientConfig: FreeAiChatClientOptions = {
-        apiKey: "your-api-key-here",
-        timeoutMs: 100000,
+    const options: FreeAiChatClientOptions = {
+        apiKey: "YOUR_API_KEY",
+        timeoutMs: 1000000
     }
 
-    const client = new FreeAiChatClient(clientConfig);
+    const client = new FreeAiChatClient(options)
 
-    const history = [
+    const history: Message[] = [
         createTextMessage("user", "gpt-4", "Hello AI, test message."),
         createTextMessage("assistant", "gpt-4", "Received! Here’s your response."),
         createTextMessage("user", "gpt-4", "Can you help me with something?"),
@@ -46,6 +46,7 @@ async function main() {
     }
 
     const stream = await client.send(apiRequest);
+
 
     const reader = stream.getReader();
     const decoder = new TextDecoder();
